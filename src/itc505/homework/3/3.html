@@ -19,29 +19,57 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="hw3.css">
+  <link rel="stylesheet" href="C:\Users\17742\Documents\website\hw3.css">
   <title>SERVING FONTS</title>
     </style>
 </head>
 <body>
     <span class="unique-text"><h1>Web Font Delivery</h1>
     <p>
-        There are a few different methods for delivering fonts to the client browser when building a website. One approach is to use web fonts, which allow fonts to be loaded from a server when a page is requested.
+        Combining server-side configuration and client-side implementation allows you to send a specified font to a client's browser in response to a request made to your server. the following steps:
     </p>
+<h2>1. Choose a Font:</h2>
     <p>
-	To use a web font, it first needs to be converted into a web-friendly format like WOFF or WOFF2. Then the font files can be hosted on a web server just like any other asset. In the CSS for the site, the web font can be specified using @font-face which defines the font files to load.
+	 Start by choosing the precise typeface you wish to provide to the client.
     </p>
+<h2>2. Font File Preparation:</h2>
     <p>
-	When the browser makes a request for the page, the web font files will be downloaded along with the rest of the site assets. The browser will have the fonts available to render text with the desired typography. Web fonts allow using any font on the web, not just default system fonts.
-	This is a simple method for delivering a custom font experience. It does increase page load size, so optimization techniques like font subsetting should be used. But overall, web fonts give great control over typography for branding and design on the web.
-    </p>
+	
+   - If you're using a web-safe font, you don't need to host font files on your server because most devices come with web-safe fonts preinstalled.
 
+<br>
+
+   - If you're using a custom font, you'll need to get the font files and have them ready to host on your server (often in formats like.woff,.woff2,.ttf, or.eot).
+</p>
+<h2>3. Host Font Files on Your Server:</h2>
     <!-- Use the unique font for the text -->
     <p>
-        Here's some text that uses our unique font:
+       Upload the font files to a directory on your web server. Ensure that the fonts are accessible via a URL, e.g., `https://shobhithhomeworks.z5.web.core.windows.net/itc505/homework/3
         <span class="unique-text">This is the unique font style!</span>
     </p>
+<h2> 
+4. CSS Font Face Declaration: <h/2>
 
+<p>
+ In your CSS file, define a `@font-face` rule to specify the font-family, source URLs, and font format. Here's an example:
+
+
+
+           /* Define the @font-face rule */
+
+
+
+        @font-face {
+
+
+
+            font-family: 'Arial';
+
+
+
+            src: url('https://shobhithhomeworks.z5.web.core.windows.net/itc505/homework/3') format('truetype')
+
+</p>
     <!-- You will need to upload 'uniquefont.woff2' to your web server for this to work -->
 </span>
 </body>
