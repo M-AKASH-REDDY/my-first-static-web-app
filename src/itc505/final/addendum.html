@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lights Out Game Development</title>
+    <link rel="stylesheet" href="addendum.css">
+</head>
+
+<body>
+    <div>
+        <h2>Addendum: Detailed Description of LIGHTS OUT Game Development</h2>
+
+        <h3>Objective:</h3>
+        <p>The Lights Out game is an interactive web-based puzzle designed to challenge players in turning off all the lights on the game board. Developed using HTML, CSS, and JavaScript, the game provides an engaging and visually appealing experience.</p>
+
+        <h3>HTML Organization:</h3>
+        <ol>
+            <li><strong>Game Title:</strong> To highlight the identity of the game, the title is shown beside the element in a prominent manner.</li>
+            <li><strong>Game Board:</strong> Each square on the game board, which is a grid inside the class board, is defined as a child.</li>
+            <li><strong>Buttons and Metrics:</strong> A new game is started by clicking the "New Game" button. Elements are used to represent metrics like a timer and the quantity of moves.</li>
+        </ol>
+
+        <h3>Logic in JavaScript:</h3>
+        <ol>
+            <li><strong>Moves and Move Limit:</strong> To add a challenge, the moves variable tracks the player's movements and has a defined MAX_MOVES limit. The player can see the move count.</li>
+            <li><strong>Timer Functionality:</strong> A timer that counts down in minutes and seconds is updated every second.</li>
+            <li><strong>Square Toggling:</strong> Clicking on a square starts a chain reaction that toggles both that square's state and the states of the squares next to it.</li>
+            <li><strong>Game State Checking:</strong> When every square is disabled, the game looks for a win condition (isWin). If the move limit is reached, a loss condition is set off.</li>
+            <li><strong>Warnings on Win/Loss:</strong> Congratulations or the game is finished, together with the amount of moves and duration, are shown.</li>
+        </ol>
+
+        <h3>Game Plot:</h3>
+        <ol>
+            <li><strong>Initialization:</strong> The game starts a new game and sets the moves and timer to zero at the same moment.</li>
+            <li><strong>Square Interaction:</strong> Clicking on a square causes the square and the squares next to it to toggle states.</li>
+            <li><strong>Game State Check:</strong> The game checks to see if it has won or lost after every move.</li>
+            <li><strong>End Game Alerts:</strong> The player receives feedback via alerts that appear after a win or loss.</li>
+        </ol>
+
+        <h3>Conclusion:</h3>
+        <p>Lights Out is a puzzle game that combines logical implementation, interactive design, and visual appeal to create a fun and challenging puzzle experience. To create a satisfying gaming experience, players are advised to plan ahead and effectively switch off every light within the allotted move limit.</p>
+
+        <h3>Link to Footer Addendum:</h3>
+        <p>The footer has a link to further in-depth information regarding the development of the Lights Out game, along with the sentence "Addendum: Lights OUT."</p>
+    </div>
+</body>
+
+</html>

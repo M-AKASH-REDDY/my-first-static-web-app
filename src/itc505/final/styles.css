@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url(https://tse3.mm.bing.net/th?id=OIP.odARzdatBlhPi11WmIPl3AHaEK&pid=Api&P=0&h=220) center/cover no-repeat;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.game-title {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #ec87c0;
+  text-shadow: 2px 2px 4px rgba(236, 135, 192, 0.5);
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(5, 60px);
+  grid-template-rows: repeat(5, 60px);
+  gap: 10px;
+}
+
+.square {
+  width: 60px;
+  height: 60px;
+  background-color: #2ecc71;
+  border: 5px solid #27ae60;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.square.is-off {
+  background-color: #e74c3c;
+}
+
+.square:hover {
+  opacity: 0.8;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.buttons {
+  margin-top: 30px;
+  text-align: center;
+}
+
+p {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+#timer {
+  font-weight: bold;
+}
+
+button {
+  margin: 10px;
+  padding: 12px 24px;
+  font-size: 18px;
+  background-color: #e67e22;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+  background-color: #d35400;
+  transform: scale(1.1);
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 15px 0;
+  text-align: center;
+  background-color: #34495e;
+}
+
+a {
+  color: #aedb34;
+}
